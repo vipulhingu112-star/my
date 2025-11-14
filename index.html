@@ -1,98 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Personal Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
+            font-family: "Arial", sans-serif;
+            line-height: 1.6;
         }
-        header {
-            background: #1a73e8;
+
+        /* Top Navigation */
+        .navbar {
+            background: #333;
             color: white;
-            padding: 40px;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        /* Hero Section */
+        .hero {
+            width: 100%;
+            height: 260px;
+            background-image: url("https://source.unsplash.com/1600x400/?technology");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .profile-section {
+            display: flex;
+            padding: 40px 10%;
+            gap: 40px;
+        }
+
+        .profile-section img {
+            width: 160px;
+            border-radius: 6px;
+        }
+
+        .title-text {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .content-section {
+            display: flex;
+            padding: 20px 10%;
+            gap: 50px;
+        }
+
+        .content-section ul {
+            margin-top: 8px;
+        }
+
+        /* Quote Section */
+        .quote-box {
+            background: #efefef;
+            padding: 30px;
+            margin-top: 50px;
             text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: #0057a3;
         }
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+        /* Footer contact */
+        .contact {
+            text-align: center;
+            margin: 40px 0 10px 0;
         }
-        h2 {
-            color: #1a73e8;
-            border-bottom: 2px solid #1a73e8;
-            padding-bottom: 5px;
+
+        .icons img {
+            width: 32px;
+            margin: 0 10px;
         }
-        ul {
-            line-height: 1.8;
+
+        footer {
+            border-top: 1px solid #eee;
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Your Profession / Student / Developer</p>
-    </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Write about yourself here. Include your background, interests, and goals.</p>
-    </section>
+    <!-- Navigation -->
+    <div class="navbar">
+        <div class="logo">Your Name</div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#research">Research & Publications</a>
+        </div>
+    </div>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>Data Analytics</li>
-            <li>Cloud Computing</li>
-        </ul>
-    </section>
+    <!-- Background Header Image -->
+    <div class="hero"></div>
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li>B.Tech / M.Tech / Diploma - Your College Name</li>
-        </ul>
-    </section>
+    <!-- Profile Section -->
+    <div class="profile-section">
+        <img src="https://via.placeholder.com/160x200" alt="profile">
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> Short description</li>
-            <li><strong>Project 2:</strong> Short description</li>
-            <li><strong>Project 3:</strong> Short description</li>
-        </ul>
-    </section>
+        <div>
+            <div class="title-text">Your Position or Tagline</div>
+            <div>Your Department<br>Your University / Organization</div>
+        </div>
+    </div>
 
-    <section>
-        <h2>Certifications / FDPs</h2>
-        <ul>
-            <li>Certification 1</li>
-            <li>Certification 2</li>
-            <li>FDP / Workshop 1</li>
-        </ul>
-    </section>
+    <!-- Skills + About -->
+    <div class="content-section">
+        <div style="width:50%">
+            <h3>Skills</h3>
+            <ul>
+                <li>Programming: Python, Java, C++</li>
+                <li>Machine Learning, Deep Learning</li>
+                <li>Data Visualization & Analytics</li>
+                <li>Cloud Computing</li>
+                <li>Database: MySQL, MongoDB</li>
+                <li>Soft Skills & Analytical Thinking</li>
+            </ul>
 
-    <section>
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Role 1:</strong> Company Name — Description</li>
-            <li><strong>Role 2:</strong> Company Name — Description</li>
-        </ul>
-    </section>
+            <h3>Areas of Expertise</h3>
+            <ul>
+                <li>AI • Machine Learning • Neural Networks</li>
+                <li>Deep Learning • Federated Learning</li>
+            </ul>
+        </div>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: yourname@gmail.com</p>
-        <p>LinkedIn: https://linkedin.com/in/yourprofile</p>
-        <p>GitHub: https://github.com/yourprofile</p>
-    </section>
+        <div style="width:50%">
+            <p>
+                Write your professional introduction here.
+                A few lines describing your passion, goals, and experience.
+                Highlight your research interests or industry expertise.
+            </p>
+
+            <p>
+                Use this space to explain your vision, mission, and what drives you.
+                This section matches the layout of the original website.
+            </p>
+        </div>
+    </div>
+
+    <!-- Quote Section -->
+    <div class="quote-box">
+        Dare to step out and embrace the challenges that lead to growth!
+    </div>
+
+    <!-- Contact -->
+    <div class="contact">
+        Contact me: <b>yourmail@gmail.com</b>
+        <div class="icons">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png"></a>
+        </div>
+    </div>
+
+    <footer>© Your Name</footer>
+
 </body>
 </html>
